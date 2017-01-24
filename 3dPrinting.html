@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Paxagen Inc. Website">
+    <meta name="author" content="Paxagen Inc.">
+    <title>Paxagen Inc</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Paxagen Inc.</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>       
+            <li><a href="./About.html">About</a></li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="./CAD.html">CAD</a></li>
+                <li><a href="./Laser.html">Laser Scanning</a></li>
+                <li><a href="./3dPrinting.html">3D Printing</a></li>
+              </ul>
+            </li>            
+            <li><a href="#contact" data-toggle="modal">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+
+    <div class="row" id="intro-div">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h2 class="about-pad">3D Printing</h2>
+            <img src="img/3DprintedObjects.png" alt="3D Printed Sculpture" class="pull-right" id="threedprint">
+            <p class="about-pad" id=threed-intro>The recent 3D printing revolution has dramatically reduced the cost of creating unique parts. We pass these savings on to customers. Our printers are capable of creating complex part geometries with demanding tolerances. Click the button below to view examples of our past work.</p>
+            <button type="button" class="btn btn-primary" id="ex-work">View Examples</button>
+        </div>
+    </div>
+    <div id="sep-div"></div>
+		
+		    
+    <!-- Fixed footer -->
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    	<div class="container">
+    		<div class="navbar-text pull-left">
+    			<p>© 2017 Paxagen Inc.</p>
+    		</div>
+    		<div class="navbar-text pull-right">
+    			<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+    			<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+    			<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+    		</div>
+    	</div>
+    </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Contact<h4>
+                </div>
+                <div class="modal-body">
+                    <p>For general inquiries, please send an email to info@paxagen.com</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var first3DPrintExample = ('<div class="row" id="ex-div"> <div class="col-sm-8 col-sm-offset-2"> <h4 class="about-pad">Electronics Housing</h4> <p class="about-pad" id=ex-one-intro>In 2010 we created a prototype home alarm system that sent SMS text messages. This was well before Nest and other companies began to commercialize “smart home” technologies. The photos show a 3D printed case for the micro-controller and other circuitry. Click on the button bellow to see additional examples of our 3D printed parts.</p> </div> </div><div class="row"> <div class="col-sm-3 col-sm-offset-2"> <img src="img/housingImg1prod.jpg" alt="3D Printed Electrical Housing" class="img-fluid" id="threedprint-one"> </div> <div class="col-sm-3"> <img src="img/housingImg2prod.jpg" alt="3D Printed Electrical Housing" class="img-fluid" id="threedprint-two"> </div> <div class="col-sm-3"><img src="img/housingImg3prod.jpg" alt="3D Printed Electrical Housing" class="img-fluid" id="threedprint-three"></div></div><div class="row" id="ex-div"> <div class="col-sm-8 col-sm-offset-2"> <button type="button" class="btn btn-primary" id="add-work">View More</button></div></div>');
+
+            var second3DPrintExample = ('<div class="row" id="ex-div"> <div class="col-sm-8 col-sm-offset-2"> <h4 class="about-pad">Kinect Mount</h4> <p class="about-pad" id=ex-one-intro>In 2013 we created an open source part to improve 3D scanning with the Xbox Kinect. The part is a mount that is used to fix the Kinect to a camera tripod. The design has been <a href="https://www.thingiverse.com/thing:61465">downloaded</a> by over a thousand people since it was released.</p> </div> </div><div class="row"> <div class="col-sm-3 col-sm-offset-2"> <img src="img/kinectPic1prod.jpg" alt="Kinect Mount" class="img-fluid"> </div> <div class="col-sm-3"> <img src="img/kinectPic2prod.jpg" alt="Kinect Mount" class="img-fluid"> </div> <div class="col-sm-3"><img src="img/kinectPic3prod.jpg" alt="3D Kinect Mount" class="img-fluid"></div></div>')
+
+            $("#ex-work").click(function(){
+                $('#sep-div').append(first3DPrintExample);
+                $('#ex-work').remove();
+            })
+            $("#sep-div").on("click", "#add-work", function(){
+                $('#sep-div').append(second3DPrintExample);
+                $('#add-work').remove();
+            })
+        })
+    </script>
+  </body>
+</html>
