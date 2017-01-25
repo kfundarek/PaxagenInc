@@ -148,10 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-caption {
-width: 550px;
-left: 15%;
 top: 50% !important;
 transform: translateY(-50%);
-text-align: left;
 bottom: initial;
 }
